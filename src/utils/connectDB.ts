@@ -9,3 +9,5 @@ async function connectDB() {
   await mongoose.connect(mongoUri);
   console.log("Connected to Mongo");
 }
+
+export { connectDB };
