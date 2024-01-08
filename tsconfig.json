@@ -24,7 +24,7 @@
       "@/app/*": ["src/app/*"],
       "@/utils/*": ["src/utils/*"],
       "@/models/*": ["src/models/*"],
-      "@/layout/*": ["src/layout/*"],
+      "@/layout/*": ["src/components/layout/*"],
       "@/module/*": ["src/module/*"],
       "@/template/*": ["src/template/*"],
       "@/providers/*": ["src/providers/*"],
