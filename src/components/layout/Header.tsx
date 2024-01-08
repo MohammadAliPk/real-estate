@@ -1,9 +1,8 @@
-import { FC } from "react";
 import { FiLogIn } from "react-icons/fi";
 import styles from "@/layout/Header.module.css";
 import Link from "next/link";
 
-const Header: FC = () => {
+function Header() {
   return (
     <header className={styles.header}>
       <div>
@@ -24,6 +23,6 @@ const Header: FC = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
