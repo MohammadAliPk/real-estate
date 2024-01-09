@@ -25,8 +25,8 @@
       "@/utils/*": ["src/utils/*"],
       "@/models/*": ["src/models/*"],
       "@/layout/*": ["src/components/layout/*"],
-      "@/module/*": ["src/module/*"],
-      "@/template/*": ["src/template/*"],
+      "@/module/*": ["src/components/module/*"],
+      "@/template/*": ["src/components/template/*"],
       "@/providers/*": ["src/providers/*"],
       "@/api/*": ["src/app/api/*"]
     }
