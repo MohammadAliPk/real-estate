@@ -16,7 +16,7 @@ function Header() {
         </ul>
       </div>
       <div className={styles.login}>
-        <Link href="/signin">
+        <Link href="/login">
           <FiLogIn />
           <span>ورود</span>
         </Link>
