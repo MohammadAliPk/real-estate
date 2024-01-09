@@ -63,7 +63,7 @@ function SignUpPage() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label htmlFor="rePassword">رمز عبور :</label>
+        <label htmlFor="rePassword">تکرار رمز عبور :</label>
         <input
           type="text"
           id="rePassword"
