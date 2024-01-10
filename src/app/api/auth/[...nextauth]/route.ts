@@ -5,6 +5,7 @@ import NextAuth, { SessionStrategy } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 interface AuthOptions {
+  secret?: string;
   session: {
     strategy: SessionStrategy;
   };
@@ -23,7 +24,8 @@ interface IUser {
   createdAt: string | Date;
 }
 
-const authOptions: AuthOptions = {
+export const authOptions: AuthOptions = {
+  secret: process.env.NEXTAUTH_SECRET as string,
   session: {
     strategy: "jwt",
   },
@@ -43,7 +45,7 @@ const authOptions: AuthOptions = {
           throw new Error("لطفا اطلاعات را به درستی وارد کنید");
         }
 
-        const user = await User.findOne({ email: email });
+        const user = await User.findOne({ email });
 
         const isValid: boolean = await verifyPassword(password, user.password);
 
@@ -51,7 +53,7 @@ const authOptions: AuthOptions = {
           throw new Error("نام کاربری یا رمز عبور اشتباه است");
         }
 
-        return email;
+        return { email };
       },
     }),
   ],
