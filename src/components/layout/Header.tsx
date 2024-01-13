@@ -24,7 +24,7 @@ function Header() {
       </div>
       {data ? (
         <div className={styles.login}>
-          <Link href="/dahsboard">
+          <Link href="/dashboard">
             <FaUserAlt />
           </Link>
         </div>
