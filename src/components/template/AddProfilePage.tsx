@@ -6,6 +6,7 @@ import { useState } from "react";
 import styles from "@/template/AddProfilePage.module.css";
 
 import TextInput from "@/module/TextInput";
+import RadioList from "@/module/RadioList";
 
 export interface ProfileData {
   title: string;
@@ -76,6 +77,7 @@ function AddProfilePage() {
         profileData={profileData}
         setProfileData={setProfileData}
       />
+      <RadioList profileData={profileData} setProfileData={setProfileData} />
       <button className={styles.submit} onClick={submitHandler}>
         ثبت آگهی
       </button>
